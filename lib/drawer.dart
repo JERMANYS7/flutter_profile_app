@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:profile_app/about.dart';
+import 'package:profile_app/grid.dart';
 import 'package:profile_app/main.dart';
 
 class MyDrawer extends StatefulWidget {
@@ -34,9 +35,15 @@ class _MyDrawerState extends State<MyDrawer> {
             },
           ),
           ListTile(
-            title: const Text('About Me'),
+            title: const Text('List View'),
             onTap: () {
               Get.to(const AboutPage());
+            },
+          ),
+          ListTile(
+            title: const Text('Grid View'),
+            onTap: () {
+              Get.to(const GridPage());
             },
           ),
         ],

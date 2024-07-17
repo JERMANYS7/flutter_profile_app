@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:getwidget/getwidget.dart';
 
 class AboutPage extends StatefulWidget {
   const AboutPage({super.key});
@@ -18,15 +19,19 @@ class _AboutPageState extends State<AboutPage> {
       ),
       body: ListView.builder(
         itemCount: items.length,
-        prototypeItem: ListTile(
-          title: Text(items.first),
-        ),
         itemBuilder: (context, index) {
-          return ListTile(
-            leading: const Icon(Icons.add),
-            title: Text(items[index]),
-            subtitle: const Text("Computer Science"),
-            trailing: const Icon(Icons.check),
+          return Container(
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.black),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            margin: EdgeInsets.all(8), 
+            child: GFListTile(
+              // leading: const Icon(Icons.add),
+              titleText: (items[index]),
+              subTitleText: 'Computer Science',
+              icon: const Icon(Icons.favorite),
+            ),
           );
         },
       ),

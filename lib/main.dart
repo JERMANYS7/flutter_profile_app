@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          Image.asset("images/profile2.jpg"),
+          Image.network("https://static.vecteezy.com/system/resources/thumbnails/022/347/003/small_2x/child-monkey-smile-photo.jpg"),
           const SizedBox(
             height: 20,
           ),
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Phisan Sookkhee",
+                      "Bawonpak Sriphol",
                       style: TextStyle(fontSize: 24),
                     ),
                   ],
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     const Text(
-                      "อาจารย์ประจำสาขาวิทยากาคอมพิวเตอร์",
+                      "นักศึกษาสาขาวิทยาการคอมพิวเตอร์",
                       style: TextStyle(fontSize: 16),
                     ),
                     const SizedBox(
